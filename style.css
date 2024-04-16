@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+header{
+    height:10vh;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap:15%;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 2px 1px rgb(28, 32, 33);
+   
+}
+header section img, .third div img{ 
+    height:5vh;
+    width:5vh;
+}
+header .second input{
+    height:5vh;
+    width:75%;
+    border:solid 1px  rgb(221, 221, 221);
+    background-color: rgb(231, 231, 231);
+    border-right: none;
+    border-radius: 1em 0 0 1em;
+   
+}
+header h3{
+    display:inline;
+    font-size: 1.5em;
+    transform: translateY(-30%);
+    margin-left:.2em;
+}
+header .second button{
+    height:5vh;
+    transform: translateY(40%);
+    width:15%;
+    border:solid 1px  rgb(221, 221, 221);
+    border-left:none;
+    background-color: rgb(221, 221, 221);
+    border-radius:0 1em 1em 0;
+    text-align: right;  
+}
+header .third{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .third div p{
+    display: inline;
+    margin-right: 1em;
+    font-size:1.1em;   
+    color: lightseagreen;
+}
+header .third div img{
+   transform: translateY(20%);  
+}
+header .third div{
+    border-radius: 1em ;
+    border:solid rgb(0, 83, 143) 1px;
+    width:8vw;
+    text-align: center;
+    height: 7vh;
+    margin-right: 2em;
+}
+.continer {
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    gap:6%;
+    height: 100vh;
+    overflow-x: hidden;
+
+
+}
+.continer .part1 , .continer .part2{
+    overflow-y: scroll;
+    height: auto;
+    margin-top: 15vh;  
+    overflow-x: hidden;
+}
+
+.continer .part1 table td img{
+    height:5vh;
+    width:5vh;
+    background-color: rgb(221, 225, 225);
+    cursor:pointer;
+
+}
+.continer .part1 table tr td:nth-child(2){
+   padding-left: 15%;
+   font-size: 1.3em;
+   padding-bottom: .1em;
+}
+
+.continer .part1 table tr td:nth-child(2):hover{
+    cursor: pointer;
+    color: rgb(0, 83, 143); 
+}
+.continer .part1 table tr td:nth-child(1){
+    padding-left: 5%;
+    padding-bottom: .1em;
+ }
+ .part1 .discription{
+        width:100%;
+        height:6em;
+        font-size: 1.3em;
+        border-top: rgb(83, 83, 83) 2px solid;  
+        border-bottom: rgb(83, 83, 83) 2px solid;  
+        text-align: center;
+        margin-top: .5em;
+        margin-bottom: .5em;
+ }
+ .part1 .discription div{
+        border-radius: .8em ;
+        border:solid rgb(0, 83, 143) 1px;
+        height: 2em;
+        width: 5em;
+        margin-left: 30%;
+        margin-top: 1em;
+        cursor: pointer;
+}
+
+#youtube{
+    height: 3vh;
+    width:3vw;
+}
+
+.part1 .discription div img{ 
+        height:4vh;
+        width:4vh;
+        transform: translateY(20%); 
+}
+.part1 .discription div p{
+        display: inline;   
+        font-size:1.1em;   
+        color: lightseagreen;
+}
+.part1 h4{
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: .5em;
+    margin-bottom: .1em;
+    margin-left: .3em;
+
+}
+#more{
+    padding-left: .5em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    width:100%;
+    border-top: rgb(83, 83, 83) 2px solid;  
+    padding-top: .5em;
+    font-weight: 900;
+   
+}
+#blank{
+    border-bottom: rgb(83, 83, 83) 2px solid; 
+    margin-bottom: 1em;
+}
+.part1 table tr td:nth-child(2){
+    width: 100%;
+}
+.copyright{
+    width:100%;
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(36, 36, 36);
+    font-size: 1.2em;
+    padding-left: 1em;
+    border-top: solid rgb(83, 83, 83) 2px;
+    padding-top: .5em;
+}
+.part2{
+    width:95%;
+    height: 100vh;
+}
+
+.cover{
+    width:100%;
+    background-image: url('one.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:25vh;
+    border-radius: 1em;
+}
+.part2 table tr td img{
+    height:20vh;
+    width:20vh;
+}
+.part2 table tr td:nth-child(2){
+     display: flex;
+     padding-left: 4em;;
+     flex-direction: column;
+     text-align: left;
+     padding-top: 1em;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 15px;
+}
+.part2 table tr td p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.part2 table tr td button{
+
+    width: 11vw;
+    height: 6vh;
+    background-color: rgb(170, 3, 42);
+    color: white;
+    border-radius: 1em;
+    border: none;
+    font-size: 1.2em;
+    margin-top: 1.5em;
+
+}
+.part2 table tr td:nth-child(2) a ,.part2 table tr td:nth-child(2) p{
+    margin-top: 1.5em;
+    color:rgb(79, 79, 79)
+
+}
+.part2 table tr td:first-child{
+ 
+    padding-left: 1em;
+    padding-top: 5em;;
+}
+.flex{
+    display:flex;
+    flex-flow:row;
+    gap:4%;
+    height:5vh;
+    align-items: start;
+    justify-content: start;
+    margin-top: 2em;
+    border-bottom: px solid rgb(2, 69, 69) ;
+    font-size: 1.2em;
+    padding-top: .8em;
+    padding-bottom:1em;
+    padding: .5em;
+    color: darkcyan;
+    cursor: pointer;
+}
+em{
+    border-bottom:3px solid rgb(63, 63, 63);
+}
+.flex section img{
+    height:3vh;
+    width:3vw;
+}
+.part2 .videos {
+    padding-left: .5em;
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:3%;
+    height:15vh;
+}
+.part2 .videos .box{
+    width:100%;
+    margin-top: 2em;
+    box-shadow: 1px 2px 7px rgb(57, 54, 54);
+    padding: 1em;
+    background-color: white;
+
+}
+
+.part2 .videos .box embed{
+    height:30vh;
+    width:100%;
+}
+.part2 .videos .box h5{
+    margin-left: .5em;
+    font-size: 1.2em;
+    padding-top: .5em;
+    color: rgb(50, 50, 50);
+    width:95%;
+    padding-bottom: 1em;
+
+}
+.part2 .videos .box p{
+    margin-left: .5em;
+
+}
+.continer .part1 table tr td{
+    font-size: .4em;
+    font-weight: 100;
+}
+.part2{
+
+    overflow-y: hidden;
+ 
+}
